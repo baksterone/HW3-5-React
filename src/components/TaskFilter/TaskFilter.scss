@@ -1,0 +1,27 @@
+#filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    margin: 5px 2%;
+    .filters_item {
+        display: inline-block;
+        -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+        text-align: center;
+        padding: 5px 0;
+        border: 1px solid #99c24d;
+        &:hover {
+            cursor: pointer;
+        }
+        &.checked {
+            background-color: #f18f01;
+            -webkit-box-shadow: 0 0 7px #f18f01;
+            box-shadow: 0 0 7px #f18f01;
+            border: none;
+            color: #fff;
+        }
+    }
+}

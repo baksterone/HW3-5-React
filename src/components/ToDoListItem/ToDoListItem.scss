@@ -1,0 +1,43 @@
+.task-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border: 1px solid #99c24d;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    color: #2f2d2e;
+    .task-text {
+        margin-left: 5px;
+        &:hover {
+            cursor: pointer;
+        }
+        &.important {
+            font-weight: bolder;
+            color: #f18f01;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+        }
+        &.task_is_done {
+            text-decoration: line-through;
+        }
+        &.task_is_important {
+            color: red;
+        }
+    }
+    .controls > i {
+        padding: 5px 0;
+        width: 30px;
+        text-align: center;
+        font-size: 1rem;
+        border-radius: 5px;
+        &:hover {
+            cursor: pointer;
+            background-color: #048ba8;
+            color: #fff;
+        }
+    }
+}
